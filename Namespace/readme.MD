@@ -1,0 +1,12 @@
+- There is a simple mental model called `AKMS` to help DevOps or developers write Kubernetes manifest files without the anxiety of memorizing complex syntax. 
+- Instead of treating YAML like a script, Kubernetes requires a `declarative` approach, where we define the desired state rather than the steps to reach it.
+- The `AKMS` model stands for:
+  - **A**: API Version
+  - **K**: Kind
+  - **M**: Metadata
+  - **S**: Spec
+
+- **A** (apiVersion): Tells Kubernetes which API version and schema to use for the resource
+- **K** (kind): Specifies the type of resource being created, such as Pod, Service, Deployment, etc.
+- **M** (metadata): Provides information about the resource, such as its name, namespace, labels, and annotations.
+- **S** (spec): Describes the desired state of the object (e.g., how many replicas of a container should run)
